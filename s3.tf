@@ -15,6 +15,6 @@ resource "aws_s3_bucket_public_access_block" "zample" {
   restrict_public_buckets = true
 }
 
-data "aws_s3_bucket" "selected" {
+data "aws_s3_bucket" "mug" {
   bucket = var.bucket_details.name
 }
