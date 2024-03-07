@@ -17,4 +17,6 @@ resource "aws_s3_bucket_public_access_block" "zample" {
 
 data "aws_s3_bucket" "mug" {
   bucket = var.bucket_details.name
+
+  depends_on = [ aws_s3_bucket.mug ]
 }
